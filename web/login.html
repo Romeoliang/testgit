@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyShop登录界面</title>
+    <style>
+
+        .div {
+            position: absolute;
+            top: 200px;
+            left: 500px;
+        }
+    </style>
+
+</head>
+<body>
+<form action="userServlet?method=loginServlet" method="post">
+    <div class="div">
+        <p align="center">
+            <h2>登录界面</h2>
+        </p>
+
+        <p>
+            <td>用户名</td>
+            <td><input type="text" name="username" placeholder="请输入用户名"></td>
+        </p>
+
+        <p style="margin-left: 16px">
+            <td>密码</td>
+            <td><input type="password" name="password" placeholder="请输入密码"></td>
+        </p>
+
+        <p>
+        <td><input type="checkbox" name="auto" value="1"/></td>
+        <td>自动登录</td>
+        </p>
+
+        <p style="margin-left: 119px">
+        <td><input type="submit" value="登录" style="margin-left: -69px"></td>
+        </p>
+        <p>
+            <a href="register.jsp">没有账户？去注册！</a>
+        </p>
+    </div>
+</form>
+</body>
+</html>
